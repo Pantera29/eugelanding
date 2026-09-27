@@ -1,0 +1,1 @@
+ALTER TABLE `therapy_requests` ADD `therapy_type` text DEFAULT 'unspecified' NOT NULL;

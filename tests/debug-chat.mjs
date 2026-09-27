@@ -1,0 +1,3 @@
+import {chromium} from 'playwright';
+const b=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe'});const p=await b.newPage();p.on('pageerror',e=>console.log('ERROR',e.message,e.stack));p.on('console',m=>{if(m.type()==='error')console.log('CONSOLE',m.text())});await p.goto('http://127.0.0.1:4173');await p.getByRole('button',{name:'Abrir chat con Eugenia'}).click();await p.getByLabel('Tu mensaje',{exact:true}).fill('Prueba técnica del chat');await p.getByRole('button',{name:'Enviar mensaje',exact:true}).click();await p.waitForTimeout(2500);console.log('BODY',await p.locator('body').innerText());await b.close();
+

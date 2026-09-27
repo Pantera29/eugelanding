@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1789936375276,
+      "tag": "0000_happy_living_lightning",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1790014454828,
+      "tag": "0001_aberrant_silk_fever",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1790019485668,
+      "tag": "0002_nifty_triton",
+      "breakpoints": true
+    }
+  ]
+}
