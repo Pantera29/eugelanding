@@ -1,6 +1,6 @@
 import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
 import {resolve,dirname} from 'node:path';
-export const origin='https://consultorio-psi-eugenia-longhi.checa-fernando.chatgpt.site';
+export const origin='https://www.eugenialonghi.com';
 const articles=JSON.parse(readFileSync('content/reflections.json','utf8'));
 const intro='Textos sobre ansiedad, vínculos, autoestima, duelos y otras experiencias que aparecen con frecuencia en psicoterapia.';
 const esc=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
